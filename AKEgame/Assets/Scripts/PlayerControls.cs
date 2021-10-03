@@ -17,7 +17,7 @@ public class PlayerControls : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         localScale = transform.localScale;
-        moveSpeed = 5f;
+        moveSpeed = 3f;
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class PlayerControls : MonoBehaviour
         dirX = Input.GetAxisRaw("Horizontal") * moveSpeed;
 
         if (Input.GetButtonDown("Jump") && rb.velocity.y == 0)
-            rb.AddForce(Vector2.up * 700f);
+            rb.AddForce(Vector2.up * 400f);
 
         if (Mathf.Abs(dirX) > 0 && rb.velocity.y == 0)
             anim.SetBool("isWalking", true);
