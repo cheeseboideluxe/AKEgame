@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:AKEgame/Assets/Art/BGS/Cutscene/anim1.anim.meta
 guid: 38f372d0eca059e45bcb7e2154cdf2b5
+=======
+guid: aef0cf74f61a7de47a1753819dffee36
+>>>>>>> b84b262d386b2c9388c39e584d72d4aef8fc6244:AKEgame/Assets/Test_Animation/_isFalling.anim.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 7400000

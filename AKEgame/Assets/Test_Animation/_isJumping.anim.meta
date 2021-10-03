@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: abf9d4af1f26e7f4e9fda9f9dbce9588
+=======
+<<<<<<< HEAD:AKEgame/Assets/Art/BGS/Cutscene/anim2.anim.meta
+guid: 2d0679f7f2754d44aaac05486ca0942a
+=======
+guid: abf9d4af1f26e7f4e9fda9f9dbce9588
+>>>>>>> b84b262d386b2c9388c39e584d72d4aef8fc6244:AKEgame/Assets/Test_Animation/_isJumping.anim.meta
+>>>>>>> b84b262d386b2c9388c39e584d72d4aef8fc6244
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 7400000

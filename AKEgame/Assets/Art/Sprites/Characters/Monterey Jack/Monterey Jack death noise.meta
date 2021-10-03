@@ -1,7 +1,18 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: a4e3295e22d16a148909cd2861b0ba8e
 folderAsset: yes
 DefaultImporter:
+=======
+<<<<<<< HEAD:AKEgame/Assets/Art/BGS/Cutscene/4.controller.meta
+guid: 6e9b9f9ad3cfbfe41b58addbc9170e16
+NativeFormatImporter:
+=======
+guid: a4e3295e22d16a148909cd2861b0ba8e
+folderAsset: yes
+DefaultImporter:
+>>>>>>> b84b262d386b2c9388c39e584d72d4aef8fc6244:AKEgame/Assets/Art/Sprites/Characters/Monterey Jack/Monterey Jack death noise.meta
+>>>>>>> b84b262d386b2c9388c39e584d72d4aef8fc6244
   externalObjects: {}
   userData: 
   assetBundleName: 

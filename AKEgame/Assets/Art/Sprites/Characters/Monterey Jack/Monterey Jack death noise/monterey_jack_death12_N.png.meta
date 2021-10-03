@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 8bc8a827244dc734992abace6c87f770
+=======
+<<<<<<< HEAD:AKEgame/Assets/Art/Sprites/Characters/Monterey Jack/Monterey Jack death noise/monterey_jack_death13_N.png.meta
+guid: 2c6356d69f4fc7941a19994bbb28dca9
+=======
+guid: 8bc8a827244dc734992abace6c87f770
+>>>>>>> b84b262d386b2c9388c39e584d72d4aef8fc6244:AKEgame/Assets/Art/Sprites/Characters/Monterey Jack/Monterey Jack death noise/monterey_jack_death12_N.png.meta
+>>>>>>> b84b262d386b2c9388c39e584d72d4aef8fc6244
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
