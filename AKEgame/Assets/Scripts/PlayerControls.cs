@@ -26,7 +26,7 @@ public class PlayerControls : MonoBehaviour
         dirX = Input.GetAxisRaw("Horizontal") * moveSpeed;
 
         if (Input.GetButtonDown("Jump") && rb.velocity.y == 0)
-            rb.AddForce(Vector2.up * 400f);
+            rb.AddForce(Vector2.up * 1000f);
 
         if (Mathf.Abs(dirX) > 0 && rb.velocity.y == 0)
             anim.SetBool("isWalking", true);
