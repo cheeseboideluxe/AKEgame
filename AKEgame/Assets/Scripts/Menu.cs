@@ -14,7 +14,7 @@ public class Menu : MonoBehaviour
     private IEnumerator StartButtonRoutine()
     {
         yield return new WaitForSeconds(0.5f);
-        SceneManager.LoadScene("2 Opening Cutscene");
+        SceneManager.LoadScene("2Opening Cutsccene");
     }
 
     public void OnClickExitButton()
