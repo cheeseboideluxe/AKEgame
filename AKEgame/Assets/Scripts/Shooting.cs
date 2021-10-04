@@ -1,18 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject shootingItem;
+    public Transform shootingPoint;
+    public bool canShoot = true;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.J))
+        {
+            Shoot();
+        }
+    }
+    
+    void Shoot()
+    {
+        if (!canShoot)
+            return;
+
+        GameObject si = Instantiate(shootingItem, shootingPoint);
+        si.transform.parent = null;
     }
 }

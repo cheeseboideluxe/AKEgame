@@ -138,9 +138,10 @@ GameObject:
   - component: {fileID: 79245577}
   - component: {fileID: 79245581}
   - component: {fileID: 79245582}
+  - component: {fileID: 79245583}
   m_Layer: 5
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,7 +156,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -9720}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1522565486}
   m_Father: {fileID: 1772525755}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -280,6 +282,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39b1c00310ea59a4f82fe38e93519af6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &79245583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79245575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcda3a8323579fa459dfcad41272e610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootingItem: {fileID: 4630101058576146702, guid: 21e9eee9bda423f47b0609f09cab7188, type: 3}
+  shootingPoint: {fileID: 1522565486}
+  canShoot: 1
 --- !u!1 &193009801
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,6 +786,7 @@ GameObject:
   - component: {fileID: 1208942172}
   - component: {fileID: 1208942171}
   - component: {fileID: 1208942176}
+  - component: {fileID: 1208942177}
   m_Layer: 5
   m_Name: NormalRat
   m_TagString: Untagged
@@ -904,6 +922,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
+--- !u!114 &1208942177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208942169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1be3bf2da799f446adf1f09482a08cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1208942169}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1369678994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,6 +1110,41 @@ Transform:
   m_Father: {fileID: 766150913}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1522565485
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1522565486}
+  m_Layer: 4
+  m_Name: ShootingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1522565486
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522565485}
+  m_LocalRotation: {x: -0, y: 0.0000000016298143, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.5e-14}
+  m_LocalScale: {x: 0.08559295, y: 0.08818637, z: 0.15898387}
+  m_Children: []
+  m_Father: {fileID: 79245576}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 111, y: -23}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1540201697
 GameObject:
   m_ObjectHideFlags: 0
