@@ -7,6 +7,6 @@ public class PlayButton : MonoBehaviour
 {
     public void OnClickStartButton()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("L1_Deck");
     }
 }
