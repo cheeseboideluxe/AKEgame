@@ -10,6 +10,7 @@ public class Attack : MonoBehaviour
         {
             NormalRatControls.isAttacking = true;
             FastRat.isAttacking = true;
+            BouncerRat.isAttacking = true;
         }
     }
 
@@ -19,6 +20,7 @@ public class Attack : MonoBehaviour
         {
             NormalRatControls.isAttacking = false;
             FastRat.isAttacking = false;
+            BouncerRat.isAttacking = false;
         }
     }
 }
