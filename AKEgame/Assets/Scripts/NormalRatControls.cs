@@ -12,12 +12,17 @@ public class NormalRatControls : MonoBehaviour
     bool facingRight = false;
     Vector3 localScale;
 
+    public static bool isAttacking = false;
+    Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
         localScale = transform.localScale;
         rb = GetComponent<Rigidbody2D>();
         dirX = -1f;
+
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -27,11 +32,19 @@ public class NormalRatControls : MonoBehaviour
             dirX = 1f;
         else if (transform.position.x > 9f)
             dirX = -1f;
+
+        if (isAttacking)
+            anim.SetBool("isAttacking", true);
+        else
+            anim.SetBool("isAttacking", false);
     }
 
     void FixedUpdate()
     {
-        rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
+        if (!isAttacking)
+            rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
+        else
+            rb.velocity = Vector2.zero;
     }
 
     void LateUpdate()
