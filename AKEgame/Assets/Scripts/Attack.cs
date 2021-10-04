@@ -9,6 +9,7 @@ public class Attack : MonoBehaviour
         if (col.gameObject.name.Equals("Player"))
         {
             NormalRatControls.isAttacking = true;
+            FastRat.isAttacking = true;
         }
     }
 
@@ -17,6 +18,7 @@ public class Attack : MonoBehaviour
         if (col.gameObject.name.Equals("Player"))
         {
             NormalRatControls.isAttacking = false;
+            FastRat.isAttacking = false;
         }
     }
 }
