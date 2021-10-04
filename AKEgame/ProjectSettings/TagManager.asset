@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: bckgrnd
+    uniqueID: 3645748003
+    locked: 0
+  - name: mid
+    uniqueID: 2066631071
+    locked: 0
+  - name: char
+    uniqueID: 3836883389
+    locked: 0
+  - name: UI
+    uniqueID: 969615547
+    locked: 0
