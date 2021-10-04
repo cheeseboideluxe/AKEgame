@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/2Opening Cutsccene.unity
     guid: 977337b55206ead49a1cb5c323414ade
   - enabled: 1
-    path: Assets/Scenes/Game.unity
-    guid: e8095ccc5f4d546448f4324ff5759e33
+    path: Assets/Scenes/L1_Deck.unity
+    guid: 345af38fdeddc95499a46e7fa2e80937
+  - enabled: 1
+    path: Assets/Scenes/L2_Lobby.unity
+    guid: f7c58aee0e4fe464ba91955779c99b1e
+  - enabled: 1
+    path: Assets/Scenes/L3_Boss.unity
+    guid: 6416c1910b2c53b4e806cbeb45bf90d5
   m_configObjects: {}
