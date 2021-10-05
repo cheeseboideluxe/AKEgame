@@ -1,22 +1,22 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class FishBullet : MonoBehaviour
 {
-    public float speed;
+    public float dirX;
+    float dirY = 0f;
+    Rigidbody2D rb;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D> ();
+    }
+
+    void Update()
+    {
+        rb.velocity = new Vector2(dirX, dirY);
+        Destroy(gameObject, 1f);
+    }
     
-    private void Update()
-    {
-        transform.Translate(transform.right * transform.localScale.x * speed * Time.deltaTime);
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
-            return;
-
-        if (collision.GetComponent<ShootingFish>())
-            collision.GetComponent<ShootingFish>().Action();
-
-        Destroy(gameObject);
-    }
 }
