@@ -11,6 +11,11 @@ public class PlayerControls : MonoBehaviour
     private bool facingRight = true;
     private Vector3 localScale;
 
+    public GameObject fishLeft, fishRight;
+    Vector2 fishPos;
+    public float fireRate = 0.5f;
+    float nextFire = 0.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +52,12 @@ public class PlayerControls : MonoBehaviour
             anim.SetBool("isJumping", false);
             anim.SetBool("isFalling", true);
         }
+        
+        if (Input.GetButtonDown("Fire1") && Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            fire();
+        }
     }
 
     private void FixedUpdate()
@@ -62,8 +73,25 @@ public class PlayerControls : MonoBehaviour
             facingRight = false;
 
         if (((facingRight) && (localScale.x < 0)) || ((!facingRight) && (localScale.x > 0)))
+        {
             localScale.x *= -1;
+        }
 
         transform.localScale = localScale;
+    }
+
+    void fire ()
+    {
+        fishPos = transform.position;
+        if (facingRight)
+        {
+            fishPos += new Vector2(+2f, -0.15f);
+            Instantiate(fishRight, fishPos, Quaternion.identity);
+        }
+        else
+        {
+            fishPos += new Vector2(-2f, -0.15f);
+            Instantiate(fishLeft, fishPos, Quaternion.identity);
+        }
     }
 }
