@@ -4,9 +4,9 @@ public class CamFollow : MonoBehaviour
 {
     public Transform target;
     public Vector3 offset;
-    [Range(1, 10)]
+    [Range(1,10)]
     public float smoothFactor;
-    public Vector3 minValues, maxValues;
+    public Vector3 minValues, maxValue;
 
     private void FixedUpdate()
     {
@@ -16,6 +16,12 @@ public class CamFollow : MonoBehaviour
     void Follow()
     {
         Vector3 targetPosition = target.position + offset;
+
+        Vector3 boundPosition = new Vector3(
+            Mathf.Clamp(targetPosition.x, minValues.x, maxValue.x),
+            Mathf.Clamp(targetPosition.y, minValues.y, maxValue.y),
+            Mathf.Clamp(targetPosition.z, minValues.z, maxValue.z));
+
         Vector3 smoothPosition = Vector3.Lerp(transform.position, targetPosition, smoothFactor * Time.fixedDeltaTime);
         transform.position = smoothPosition;
     }

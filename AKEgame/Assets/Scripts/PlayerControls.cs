@@ -22,7 +22,7 @@ public class PlayerControls : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         localScale = transform.localScale;
-        moveSpeed = 3f;
+        moveSpeed = 4f;
     }
 
     // Update is called once per frame
