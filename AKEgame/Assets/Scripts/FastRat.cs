@@ -62,4 +62,13 @@ public class FastRat : MonoBehaviour
             localScale.x *= -1;
         transform.localScale = localScale;
     }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag.Equals("Bullet"))
+        {
+            Destroy(col.gameObject, 3f);
+            Destroy(gameObject);
+        }
+    }
 }
