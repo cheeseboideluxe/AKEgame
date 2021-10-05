@@ -97,7 +97,5 @@ public class PlayerControls : MonoBehaviour
             fishPos += new Vector2(-2f, -0.15f);
             Instantiate(fishLeft, fishPos, Quaternion.identity);
         }
-
-        
     }
 }
