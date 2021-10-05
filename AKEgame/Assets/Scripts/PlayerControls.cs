@@ -31,7 +31,10 @@ public class PlayerControls : MonoBehaviour
         dirX = Input.GetAxisRaw("Horizontal") * moveSpeed;
 
         if (Input.GetButtonDown("Jump") && rb.velocity.y == 0)
+        {
+            SoundManager.PlaySound("Jump_MM");
             rb.AddForce(Vector2.up * 1000f);
+        }
 
         if (Mathf.Abs(dirX) > 0 && rb.velocity.y == 0)
             anim.SetBool("isWalking", true);
@@ -45,7 +48,7 @@ public class PlayerControls : MonoBehaviour
         }
 
         if (rb.velocity.y > 0)
-            anim.SetBool("isJumping", true);
+            anim.SetBool("isJumping", true);           
 
         if (rb.velocity.y < 0)
         {
@@ -55,6 +58,7 @@ public class PlayerControls : MonoBehaviour
         
         if (Input.GetButtonDown("Fire1") && Time.time > nextFire)
         {
+            SoundManager.PlaySound("Attack1_MM");
             nextFire = Time.time + fireRate;
             fire();
         }
@@ -93,5 +97,7 @@ public class PlayerControls : MonoBehaviour
             fishPos += new Vector2(-2f, -0.15f);
             Instantiate(fishLeft, fishPos, Quaternion.identity);
         }
+
+        
     }
 }
