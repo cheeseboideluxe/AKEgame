@@ -66,7 +66,7 @@ public class BouncerRat : MonoBehaviour
     {
         if (col.gameObject.tag.Equals("Bullet"))
         {
-            Destroy(col.gameObject, 6f);
+            Destroy(col.gameObject, 7f);
             Destroy(gameObject);
         }
     }
