@@ -10,7 +10,7 @@ public class PlayerControls : MonoBehaviour
     private float dirX;
     private bool facingRight = true;
     private Vector3 localScale;
-
+    private bool isCrouching = false;
     public GameObject fishLeft, fishRight;
     Vector2 fishPos;
     public float fireRate = 0.5f;
@@ -35,6 +35,7 @@ public class PlayerControls : MonoBehaviour
             SoundManager.PlaySound("Jump_MM");
             rb.AddForce(Vector2.up * 1000f);
         }
+        
         
 
         if (Mathf.Abs(dirX) > 0 && rb.velocity.y == 0)
