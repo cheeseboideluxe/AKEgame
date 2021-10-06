@@ -10,7 +10,7 @@ public class PlayerControls : MonoBehaviour
     private float dirX;
     private bool facingRight = true;
     private Vector3 localScale;
-
+    private bool isCrouching = false;
     public GameObject fishLeft, fishRight;
     Vector2 fishPos;
     public float fireRate = 0.5f;
@@ -36,6 +36,8 @@ public class PlayerControls : MonoBehaviour
             rb.AddForce(Vector2.up * 1000f);
         }
         
+        
+
         if (Mathf.Abs(dirX) > 0 && rb.velocity.y == 0)
             anim.SetBool("isWalking", true);
         else
@@ -62,8 +64,6 @@ public class PlayerControls : MonoBehaviour
             nextFire = Time.time + fireRate;
             fire();
         }
-
- 
     }
 
     private void FixedUpdate()
