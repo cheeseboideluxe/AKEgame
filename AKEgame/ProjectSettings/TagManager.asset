@@ -46,6 +46,9 @@ TagManager:
   - name: bckgrnd
     uniqueID: 3645748003
     locked: 0
+  - name: mid1
+    uniqueID: 4230464691
+    locked: 0
   - name: mid
     uniqueID: 2066631071
     locked: 0
