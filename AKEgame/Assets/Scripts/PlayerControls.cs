@@ -98,4 +98,16 @@ public class PlayerControls : MonoBehaviour
             Instantiate(fishLeft, fishPos, Quaternion.identity);
         }
     }
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag.Equals("Trolley"))
+        {
+            anim.Play("_isDead");
+            Destroy(gameObject, 0.5f);
+            
+
+
+        } 
+        
+    }
 }
