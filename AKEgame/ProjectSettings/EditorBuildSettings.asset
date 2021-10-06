@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/L3_Boss.unity
     guid: 6416c1910b2c53b4e806cbeb45bf90d5
+  - enabled: 1
+    path: Assets/Scenes/Ratman.unity
+    guid: e3e89d13737afaa4daf1e400cdd1fc19
   m_configObjects: {}
