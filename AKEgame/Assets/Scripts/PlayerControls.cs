@@ -35,8 +35,7 @@ public class PlayerControls : MonoBehaviour
             SoundManager.PlaySound("Jump_MM");
             rb.AddForce(Vector2.up * 1000f);
         }
-        
-
+       
         if (Mathf.Abs(dirX) > 0 && rb.velocity.y == 0)
             anim.SetBool("isWalking", true);
         else
@@ -63,6 +62,7 @@ public class PlayerControls : MonoBehaviour
             nextFire = Time.time + fireRate;
             fire();
         }
+
     }
 
     private void FixedUpdate()
@@ -105,8 +105,6 @@ public class PlayerControls : MonoBehaviour
         {
             anim.Play("_isDead");
             Destroy(gameObject, 0.5f);
-            
-
 
         } 
         
