@@ -27,6 +27,7 @@ public class BouncerRat : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+
     {
         if (transform.position.x < -9f)
             dirX = 1f;
@@ -37,6 +38,7 @@ public class BouncerRat : MonoBehaviour
             anim.SetBool("isAttacking", true);
         else
             anim.SetBool("isAttacking", false);
+        this.transform.position += transform.up * Time.deltaTime * moveSpeed;
     }
 
     void FixedUpdate()
@@ -69,5 +71,15 @@ public class BouncerRat : MonoBehaviour
             Destroy(col.gameObject, 15f);
             Destroy(gameObject);
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag ("Trolley"))
+
+        {
+            return;
+        }
+        this.transform.Rotate(transform.rotation.x, transform.rotation.y, transform.rotation.z - 90);
     }
 }
