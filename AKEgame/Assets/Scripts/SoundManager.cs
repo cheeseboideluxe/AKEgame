@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public static AudioClip jumpMungko, walkMungko, attackMungko1;
+    public static AudioClip jumpMungko, walkMungko, attackMungko1, deathNormal, deathBouncer, deathNimble;
     static AudioSource audioSrc;
 
     void Start()
@@ -12,6 +12,9 @@ public class SoundManager : MonoBehaviour
         jumpMungko = Resources.Load<AudioClip>("Jump_MM");
         walkMungko = Resources.Load<AudioClip>("Walking_MM");
         attackMungko1 = Resources.Load<AudioClip>("Attack1_MM");
+        deathNormal = Resources.Load<AudioClip>("Death_NormalRat");
+        deathBouncer = Resources.Load<AudioClip>("Death_BouncerRat");
+        deathNimble = Resources.Load<AudioClip>("Death_NimbleRat");
 
         audioSrc = GetComponent<AudioSource>();
     }
@@ -29,6 +32,15 @@ public class SoundManager : MonoBehaviour
                 break;
             case "Attack1_MM":
                 audioSrc.PlayOneShot(attackMungko1);
+                break;
+            case "Death_NormalRat":
+                audioSrc.PlayOneShot(deathNormal);
+                break;
+            case "Death_BouncerRat":
+                audioSrc.PlayOneShot(deathBouncer);
+                break;
+            case "Death_NimbleRat":
+                audioSrc.PlayOneShot(deathNimble);
                 break;
         }
     }
