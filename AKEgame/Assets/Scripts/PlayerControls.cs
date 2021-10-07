@@ -49,6 +49,8 @@ public class PlayerControls : MonoBehaviour
         else
             anim.SetBool("isWalking", false);
 
+       
+
         if (rb.velocity.y == 0)
         {
             anim.SetBool("isJumping", false);
@@ -129,14 +131,21 @@ public class PlayerControls : MonoBehaviour
 
     IEnumerator Dash()
     {
+        if (Mathf.Abs(dirX) > 0 && rb.velocity.y == 0)
+            anim.SetBool("isDashing", true);
+        else
+            anim.SetBool("isDashing", false);
+
+
         isDashing = true;
         var dashSpeed = baseSpeed;
         dashSpeed *= dashPower;
         moveSpeed = dashSpeed;
         yield return new WaitForSeconds(dashTime);
+        anim.StopPlayback();
         moveSpeed = baseSpeed;
         isDashing = false;
-
+        
 
     }
 }
