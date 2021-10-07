@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ratman.unity
     guid: e3e89d13737afaa4daf1e400cdd1fc19
+  - enabled: 1
+    path: Assets/Scenes/ratmanyes.unity
+    guid: 5d287cc8d27abd64aa15a006b5f503e6
   m_configObjects: {}
