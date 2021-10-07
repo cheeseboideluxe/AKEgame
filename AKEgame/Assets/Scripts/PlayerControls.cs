@@ -142,7 +142,6 @@ public class PlayerControls : MonoBehaviour
         dashSpeed *= dashPower;
         moveSpeed = dashSpeed;
         yield return new WaitForSeconds(dashTime);
-        anim.StopPlayback();
         moveSpeed = baseSpeed;
         isDashing = false;
         
