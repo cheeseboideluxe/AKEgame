@@ -958,6 +958,9 @@ MonoBehaviour:
   fishLeft: {fileID: 1037454916851863457, guid: 3d8bcbd2d0b6a3446897cc24c5aa9a45, type: 3}
   fishRight: {fileID: 4041214852996406248, guid: 6a70d0b8b63e2ab408e4864c50b8d0e3, type: 3}
   fireRate: 0.5
+  baseSpeed: 6
+  dashPower: 10
+  dashTime: 0.1
 --- !u!1 &1354089197
 GameObject:
   m_ObjectHideFlags: 0
