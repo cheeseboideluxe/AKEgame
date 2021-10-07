@@ -10,7 +10,6 @@ public class PlayerControls : MonoBehaviour
     private float dirX;
     private bool facingRight = true;
     private Vector3 localScale;
-    private bool isCrouching = false;
     public GameObject fishLeft, fishRight;
     Vector2 fishPos;
     public float fireRate = 0.5f;
