@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 1145df79d5a3d724789a8a24a4bc930e
-=======
-guid: 8e2db703a46191748ab7b55af0263f46
->>>>>>> 9043cd0b822d3624ce953d511c9f84bdda3d91be
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -41,11 +37,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-<<<<<<< HEAD
-    wrapW: 1
-=======
     wrapW: 0
->>>>>>> 9043cd0b822d3624ce953d511c9f84bdda3d91be
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -69,20 +61,13 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-<<<<<<< HEAD
-  applyGammaDecoding: 0
-=======
   applyGammaDecoding: 1
->>>>>>> 9043cd0b822d3624ce953d511c9f84bdda3d91be
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< HEAD
-    textureCompression: 1
-=======
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
@@ -108,7 +93,6 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
->>>>>>> 9043cd0b822d3624ce953d511c9f84bdda3d91be
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0

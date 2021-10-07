@@ -10,7 +10,6 @@ public class PlayerControls : MonoBehaviour
     private float dirX;
     private bool facingRight = true;
     private Vector3 localScale;
-    private bool isCrouching = false;
     public GameObject fishLeft, fishRight;
     Vector2 fishPos;
     public float fireRate = 0.5f;
@@ -28,8 +27,6 @@ public class PlayerControls : MonoBehaviour
         anim = GetComponent<Animator>();
         localScale = transform.localScale;
         moveSpeed = 6f;
-
-       
     }
 
     // Update is called once per frame
@@ -128,6 +125,14 @@ public class PlayerControls : MonoBehaviour
         } 
         
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Attack"))
+        {
+            anim.Play("_isDead");
+            Destroy(gameObject, 0.5f);
+        }
+    }
 
     IEnumerator Dash()
     {
@@ -142,6 +147,7 @@ public class PlayerControls : MonoBehaviour
         dashSpeed *= dashPower;
         moveSpeed = dashSpeed;
         yield return new WaitForSeconds(dashTime);
+
         moveSpeed = baseSpeed;
         isDashing = false;
         

@@ -27,6 +27,7 @@ public class BouncerRat : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+
     {
         if (transform.position.x < -9f)
             dirX = 1f;
@@ -37,6 +38,7 @@ public class BouncerRat : MonoBehaviour
             anim.SetBool("isAttacking", true);
         else
             anim.SetBool("isAttacking", false);
+     
     }
 
     void FixedUpdate()
@@ -66,8 +68,10 @@ public class BouncerRat : MonoBehaviour
     {
         if (col.gameObject.tag.Equals("Bullet"))
         {
-            Destroy(col.gameObject, 7f);
+            Destroy(col.gameObject, 15f);
             Destroy(gameObject);
         }
     }
+
+   
 }
