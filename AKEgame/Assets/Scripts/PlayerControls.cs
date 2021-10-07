@@ -15,20 +15,28 @@ public class PlayerControls : MonoBehaviour
     Vector2 fishPos;
     public float fireRate = 0.5f;
     float nextFire = 0.0f;
-
+    public float baseSpeed;
+    public float dashPower;
+    public float dashTime;
+    bool isDashing = false;
+    
     // Start is called before the first frame update
     void Start()
     {
+        moveSpeed = baseSpeed;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         localScale = transform.localScale;
         moveSpeed = 4f;
+
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        dirX = Input.GetAxisRaw("Horizontal") * moveSpeed;
+        dirX = Input.GetAxisRaw("Horizontal");
+        rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
 
         if (Input.GetButtonDown("Jump") && rb.velocity.y == 0)
         {
@@ -63,12 +71,18 @@ public class PlayerControls : MonoBehaviour
             fire();
         }
 
+       if (Input.GetKeyDown(KeyCode.K))
+        {
+            if (!isDashing)
+            {
+                StartCoroutine(Dash());
+            }
+        }
+       
+
     }
 
-    private void FixedUpdate()
-    {
-        rb.velocity = new Vector2(dirX, rb.velocity.y);
-    }
+
 
     private void LateUpdate()
     {
@@ -108,5 +122,16 @@ public class PlayerControls : MonoBehaviour
 
         } 
         
+    }
+
+    IEnumerator Dash()
+    {
+        isDashing = true;
+        baseSpeed *= dashPower;
+        yield return new WaitForSeconds(dashTime);
+        moveSpeed = baseSpeed;
+        isDashing = false;
+
+
     }
 }
