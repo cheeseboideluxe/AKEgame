@@ -75,7 +75,7 @@ public class BouncerRat : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag ("Trolley"))
+        if (collision.CompareTag ("turnpoint"))
 
         {
             return;
