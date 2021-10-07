@@ -15,32 +15,41 @@ public class PlayerControls : MonoBehaviour
     Vector2 fishPos;
     public float fireRate = 0.5f;
     float nextFire = 0.0f;
-
+    public float baseSpeed;
+    public float dashPower;
+    public float dashTime;
+    bool isDashing = false;
+    
     // Start is called before the first frame update
     void Start()
     {
+        moveSpeed = baseSpeed;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         localScale = transform.localScale;
-        moveSpeed = 4f;
+        moveSpeed = 6f;
+
+       
     }
 
     // Update is called once per frame
     void Update()
     {
         dirX = Input.GetAxisRaw("Horizontal") * moveSpeed;
+        
 
         if (Input.GetButtonDown("Jump") && rb.velocity.y == 0)
         {
             SoundManager.PlaySound("Jump_MM");
             rb.AddForce(Vector2.up * 1000f);
         }
-        
-
+       
         if (Mathf.Abs(dirX) > 0 && rb.velocity.y == 0)
             anim.SetBool("isWalking", true);
         else
             anim.SetBool("isWalking", false);
+
+       
 
         if (rb.velocity.y == 0)
         {
@@ -63,12 +72,22 @@ public class PlayerControls : MonoBehaviour
             nextFire = Time.time + fireRate;
             fire();
         }
-    }
 
+       if (Input.GetKeyDown(KeyCode.K))
+        {
+            if (!isDashing)
+            {
+                StartCoroutine(Dash());
+            }
+        }
+       
+
+    }
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(dirX, rb.velocity.y);
     }
+
 
     private void LateUpdate()
     {
@@ -105,10 +124,27 @@ public class PlayerControls : MonoBehaviour
         {
             anim.Play("_isDead");
             Destroy(gameObject, 0.5f);
-            
-
 
         } 
         
+    }
+
+    IEnumerator Dash()
+    {
+        if (Mathf.Abs(dirX) > 0 && rb.velocity.y == 0)
+            anim.SetBool("isDashing", true);
+        else
+            anim.SetBool("isDashing", false);
+
+
+        isDashing = true;
+        var dashSpeed = baseSpeed;
+        dashSpeed *= dashPower;
+        moveSpeed = dashSpeed;
+        yield return new WaitForSeconds(dashTime);
+        moveSpeed = baseSpeed;
+        isDashing = false;
+        
+
     }
 }
