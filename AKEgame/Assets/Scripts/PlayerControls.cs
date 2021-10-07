@@ -27,8 +27,6 @@ public class PlayerControls : MonoBehaviour
         anim = GetComponent<Animator>();
         localScale = transform.localScale;
         moveSpeed = 6f;
-
-       
     }
 
     // Update is called once per frame
