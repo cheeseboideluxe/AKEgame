@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bullet
   - Trolley
+  - Attack
   layers:
   - Default
   - TransparentFX

@@ -128,6 +128,14 @@ public class PlayerControls : MonoBehaviour
         } 
         
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Attack"))
+        {
+            anim.Play("_isDead");
+            Destroy(gameObject, 0.5f);
+        }
+    }
 
     IEnumerator Dash()
     {
@@ -142,6 +150,7 @@ public class PlayerControls : MonoBehaviour
         dashSpeed *= dashPower;
         moveSpeed = dashSpeed;
         yield return new WaitForSeconds(dashTime);
+
         moveSpeed = baseSpeed;
         isDashing = false;
         
