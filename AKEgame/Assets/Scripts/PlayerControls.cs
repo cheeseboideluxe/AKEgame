@@ -27,7 +27,7 @@ public class PlayerControls : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         localScale = transform.localScale;
-        moveSpeed = 4f;
+        moveSpeed = 6f;
 
        
     }
@@ -35,8 +35,8 @@ public class PlayerControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        dirX = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
+        dirX = Input.GetAxisRaw("Horizontal") * moveSpeed;
+        
 
         if (Input.GetButtonDown("Jump") && rb.velocity.y == 0)
         {
@@ -81,7 +81,10 @@ public class PlayerControls : MonoBehaviour
        
 
     }
-
+    private void FixedUpdate()
+    {
+        rb.velocity = new Vector2(dirX, rb.velocity.y);
+    }
 
 
     private void LateUpdate()
@@ -127,7 +130,9 @@ public class PlayerControls : MonoBehaviour
     IEnumerator Dash()
     {
         isDashing = true;
-        baseSpeed *= dashPower;
+        var dashSpeed = baseSpeed;
+        dashSpeed *= dashPower;
+        moveSpeed = dashSpeed;
         yield return new WaitForSeconds(dashTime);
         moveSpeed = baseSpeed;
         isDashing = false;
