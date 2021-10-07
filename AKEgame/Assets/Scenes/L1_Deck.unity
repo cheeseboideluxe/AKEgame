@@ -494,7 +494,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 2066631071
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &222090622
 RectTransform:
@@ -1899,7 +1899,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -941, y: -286}
+  m_AnchoredPosition: {x: -941, y: -586}
   m_SizeDelta: {x: 244.89, y: 229.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1132729807
@@ -2070,6 +2070,9 @@ MonoBehaviour:
   fishLeft: {fileID: 1037454916851863457, guid: 3d8bcbd2d0b6a3446897cc24c5aa9a45, type: 3}
   fishRight: {fileID: 4041214852996406248, guid: 6a70d0b8b63e2ab408e4864c50b8d0e3, type: 3}
   fireRate: 0.5
+  baseSpeed: 0
+  dashPower: 0
+  dashTime: 0
 --- !u!50 &1181758712
 Rigidbody2D:
   serializedVersion: 4

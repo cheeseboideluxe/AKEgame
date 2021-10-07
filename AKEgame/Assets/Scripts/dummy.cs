@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class YES : MonoBehaviour
+public class dummy : MonoBehaviour
 {
     public void OnClickStartButton()
     {
-        SceneManager.LoadScene("ratmanyes");
+        SceneManager.LoadScene("l1_Deck");
     }
 }

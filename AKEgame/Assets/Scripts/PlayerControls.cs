@@ -17,6 +17,7 @@ public class PlayerControls : MonoBehaviour
     public float baseSpeed;
     public float dashPower;
     public float dashTime;
+    
     bool isDashing = false;
     
     // Start is called before the first frame update
