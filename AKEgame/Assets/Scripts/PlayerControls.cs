@@ -44,9 +44,7 @@ public class PlayerControls : MonoBehaviour
         if (Mathf.Abs(dirX) > 0 && rb.velocity.y == 0)
             anim.SetBool("isWalking", true);
         else
-            anim.SetBool("isWalking", false);
-
-       
+            anim.SetBool("isWalking", false);   
 
         if (rb.velocity.y == 0)
         {

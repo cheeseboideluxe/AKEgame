@@ -67,6 +67,7 @@ public class NormalRatControls : MonoBehaviour
     {
         if (col.gameObject.tag.Equals("Bullet"))
         {
+            SoundManager.PlaySound("Death_NormalRat");
             Destroy(col.gameObject, 2f);
             Destroy(gameObject);
         }

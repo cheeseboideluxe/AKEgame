@@ -68,6 +68,7 @@ public class BouncerRat : MonoBehaviour
     {
         if (col.gameObject.tag.Equals("Bullet"))
         {
+            SoundManager.PlaySound("Death_BouncerRat");
             Destroy(col.gameObject, 15f);
             Destroy(gameObject);
         }

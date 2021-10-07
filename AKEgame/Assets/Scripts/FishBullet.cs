@@ -16,7 +16,7 @@ public class FishBullet : MonoBehaviour
     void Update()
     {
         rb.velocity = new Vector2(dirX, dirY);
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, 3f);
     }
     
 }

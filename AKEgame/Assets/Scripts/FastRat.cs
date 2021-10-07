@@ -67,6 +67,7 @@ public class FastRat : MonoBehaviour
     {
         if (col.gameObject.tag.Equals("Bullet"))
         {
+            SoundManager.PlaySound("Death_NimbleRat");
             Destroy(col.gameObject, 3f);
             Destroy(gameObject);
         }
