@@ -38,7 +38,7 @@ public class BouncerRat : MonoBehaviour
             anim.SetBool("isAttacking", true);
         else
             anim.SetBool("isAttacking", false);
-        this.transform.position += transform.up * Time.deltaTime * moveSpeed;
+     
     }
 
     void FixedUpdate()
@@ -73,13 +73,5 @@ public class BouncerRat : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag ("turnpoint"))
-
-        {
-            return;
-        }
-        this.transform.Rotate(transform.rotation.x, transform.rotation.y, transform.rotation.z - 90);
-    }
+   
 }
