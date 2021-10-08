@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Obstacles
+  - Enemy
+  - Attack
+  - Trolley
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -41,6 +46,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: background
+    uniqueID: 3775638825
+    locked: 0
+  - name: mid
+    uniqueID: 1566267985
+    locked: 0
+  - name: ground
+    uniqueID: 3136255109
+    locked: 0
   - name: char
     uniqueID: 3623735149
+    locked: 0
+  - name: UI
+    uniqueID: 2548336359
     locked: 0

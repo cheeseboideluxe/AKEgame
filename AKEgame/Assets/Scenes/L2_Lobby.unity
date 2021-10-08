@@ -191,8 +191,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1382189225
-  m_SortingLayer: 0
+  m_SortingLayerID: -1158712187
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 3e3a33522f9f524478d1a1cd9ea9a77c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -286,8 +286,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -458083907
-  m_SortingLayer: 0
+  m_SortingLayerID: -1158712187
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 096fcb3fd555c0c4dac868992d0734c9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -448,8 +448,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -458083907
-  m_SortingLayer: 0
+  m_SortingLayerID: -671232147
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dc088bee6dd7f2f48940601b64634d52, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -624,7 +624,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 969615547
+  m_SortingLayerID: -1746630937
   m_SortingOrder: 32767
   m_TargetDisplay: 0
 --- !u!224 &255163088
@@ -949,7 +949,7 @@ GameObject:
   - component: {fileID: 657047707}
   m_Layer: 0
   m_Name: tempwall
-  m_TagString: Obstacles
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1017,8 +1017,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -458083907
-  m_SortingLayer: 0
+  m_SortingLayerID: -1158712187
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8a942b110f4c7324098c166dd0726180, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1776,8 +1776,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -458083907
-  m_SortingLayer: 0
+  m_SortingLayerID: -671232147
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 8336e467be7137b45b587e072660c3f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2139,8 +2139,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -458083907
-  m_SortingLayer: 0
+  m_SortingLayerID: -671232147
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dc088bee6dd7f2f48940601b64634d52, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2694,18 +2694,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1134120900}
     m_Modifications:
-    - target: {fileID: 4130802970598770764, guid: d790b02d4feb83e498d05bd5039047b8, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4130802970598770764, guid: d790b02d4feb83e498d05bd5039047b8, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4130802970598770764, guid: d790b02d4feb83e498d05bd5039047b8, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -649219293
-      objectReference: {fileID: 0}
     - target: {fileID: 4130802970598770765, guid: d790b02d4feb83e498d05bd5039047b8, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2753,10 +2741,6 @@ PrefabInstance:
     - target: {fileID: 4130802970598770767, guid: d790b02d4feb83e498d05bd5039047b8, type: 3}
       propertyPath: m_Name
       value: Lobby1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4130802970598770767, guid: d790b02d4feb83e498d05bd5039047b8, type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d790b02d4feb83e498d05bd5039047b8, type: 3}
