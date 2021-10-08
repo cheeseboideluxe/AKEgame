@@ -7,7 +7,8 @@ public class FastRat : MonoBehaviour
     float moveSpeed = 5f;
     Rigidbody2D rb;
     private Transform player;
-
+    public static bool isAttacking = false;
+    Animator anim;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +32,10 @@ public class FastRat : MonoBehaviour
         {
             transform.localScale = new Vector3(1, 1, 1);
         }
-
+        if (isAttacking)
+            anim.SetBool("isAttacking", true);
+        else
+            anim.SetBool("isAttacking", false);
     }
 
     void FixedUpdate()
