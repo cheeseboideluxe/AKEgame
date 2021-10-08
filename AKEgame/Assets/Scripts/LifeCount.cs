@@ -10,6 +10,9 @@ public class LifeCount : MonoBehaviour
 
     public void LoseLife()
     {
+        if (livesRemaining == 0)
+            return;
+
         livesRemaining--;
         lives[livesRemaining].enabled = false;
 
@@ -20,8 +23,8 @@ public class LifeCount : MonoBehaviour
     } 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
-            LoseLife();
+        // if (Input.GetKeyDown(KeyCode.Return))
+        //    LoseLife();
     }
 
 }
