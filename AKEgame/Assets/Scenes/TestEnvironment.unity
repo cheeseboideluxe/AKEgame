@@ -1401,7 +1401,7 @@ GameObject:
   - component: {fileID: 902113907}
   m_Layer: 5
   m_Name: Boop
-  m_TagString: Untagged
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1458,7 +1458,7 @@ GameObject:
   - component: {fileID: 1178375890}
   m_Layer: 5
   m_Name: FastRat
-  m_TagString: Untagged
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
