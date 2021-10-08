@@ -16,6 +16,7 @@ public class FishBullet : MonoBehaviour
     void Update()
     {
         rb.velocity = new Vector2(dirX, dirY);
+        Destroy(gameObject, 3f);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
