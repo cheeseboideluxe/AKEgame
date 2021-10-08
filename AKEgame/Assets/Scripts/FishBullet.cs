@@ -20,9 +20,12 @@ public class FishBullet : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == ("Enemy"))
+        if (collision.gameObject.name.Equals("Enemy"))
         {
             Destroy(collision.gameObject, 3f);
+            Destroy(gameObject);
+        } else
+        {
             Destroy(gameObject);
         }
     }

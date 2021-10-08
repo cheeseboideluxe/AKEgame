@@ -9,6 +9,7 @@ TagManager:
   - Attack
   - turnpoint
   - Enemy
+  - Obstacles
   layers:
   - Default
   - TransparentFX
