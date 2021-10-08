@@ -5,11 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bullet
-  - Trolley
   - Attack
   - turnpoint
   - Enemy
   - Obstacles
+<<<<<<< HEAD
+=======
+  - Trolley
+>>>>>>> 5ae4f22d03d324f0d41655ce13f910b963bf5525
   layers:
   - Default
   - TransparentFX
