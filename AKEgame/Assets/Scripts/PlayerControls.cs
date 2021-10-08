@@ -112,7 +112,7 @@ public class PlayerControls : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag.Equals("Trolley"))
+        if (col.gameObject.tag.Equals("Obstacles"))
         {
             anim.Play("_isDead");
             Destroy(gameObject, 0.5f);
