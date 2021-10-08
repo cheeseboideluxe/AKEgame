@@ -21,7 +21,6 @@ public class BouncerRat : MonoBehaviour
         localScale = transform.localScale;
         rb = GetComponent<Rigidbody2D>();
         dirX = -1f;
-
         anim = GetComponent<Animator>();
     }
 
