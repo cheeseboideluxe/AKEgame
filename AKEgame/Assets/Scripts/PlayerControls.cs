@@ -34,7 +34,6 @@ public class PlayerControls : MonoBehaviour
     void Update()
     {
         dirX = Input.GetAxisRaw("Horizontal") * moveSpeed;
-        
 
         if (Input.GetButtonDown("Jump") && rb.velocity.y == 0)
         {
@@ -75,15 +74,13 @@ public class PlayerControls : MonoBehaviour
             {
                 StartCoroutine(Dash());
             }
-        }
-       
+        }      
 
     }
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(dirX, rb.velocity.y);
     }
-
 
     private void LateUpdate()
     {
@@ -96,7 +93,6 @@ public class PlayerControls : MonoBehaviour
         {
             localScale.x *= -1;
         }
-
         transform.localScale = localScale;
     }
 
@@ -120,7 +116,6 @@ public class PlayerControls : MonoBehaviour
         {
             anim.Play("_isDead");
             Destroy(gameObject, 0.5f);
-
         } 
         
     }
