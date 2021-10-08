@@ -14,7 +14,7 @@ public class monterey : MonoBehaviour
     void Start()
     {
 
-        fireRate = 3f;
+        fireRate = 1f;
         nextFire = Time.time;
         
     }
