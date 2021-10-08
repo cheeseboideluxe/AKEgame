@@ -25,10 +25,10 @@ public class bullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
      
-        if (col.gameObject.name.Equals("Cat"))
+        if (col.gameObject.name.Equals("Player"))
         {
             Debug.Log("Hit!");
-            Destroy(gameObject);
+            
         }
     }
 }
