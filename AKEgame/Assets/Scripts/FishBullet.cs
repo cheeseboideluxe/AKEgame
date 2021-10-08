@@ -24,10 +24,12 @@ public class FishBullet : MonoBehaviour
         {
             Destroy(collision.gameObject, 3f);
             Destroy(gameObject);
-        } else
+        }
+        else
         {
             Destroy(gameObject);
         }
     }
+        
 
 }
