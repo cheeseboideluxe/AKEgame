@@ -1,35 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class monterey : MonoBehaviour
+public class Monterey : MonoBehaviour
 {
-    [SerializeField]
-    GameObject bullet;
+    public float Hitpoints;
+    public float MaxHitpoints = 10;
+    public HealthbarBehaviour Healthbar;
 
-    float fireRate;
-    float nextFire;
 
-    // Start is called before the first frame update
     void Start()
     {
-
-        fireRate = 1f;
-        nextFire = Time.time;
-        
+        Hitpoints = MaxHitpoints;
+        Healthbar.SetHealth(Hitpoints, MaxHitpoints);
     }
 
-    // Update is called once per frame
-    void Update() {
-        CheckIfTimeToFire();
-    }
+    public void TakeHit(float damage)
+    {
+        Hitpoints -= MaxHitpoints;
+        Healthbar.SetHealth(Hitpoints, MaxHitpoints);
 
-    void CheckIfTimeToFire() {   
-    if (Time.time > nextFire)
+        if (Hitpoints <= 0)
         {
-            Instantiate(bullet, transform.position, Quaternion.identity);
-            nextFire = Time.time + fireRate;
+            Destroy(gameObject);
         }
-
     }
 }
