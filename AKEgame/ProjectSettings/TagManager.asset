@@ -3,24 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Bullet
-  - Attack
-  - turnpoint
-  - Enemy
-  - Obstacles
-<<<<<<< HEAD
-=======
-  - Trolley
->>>>>>> 5ae4f22d03d324f0d41655ce13f910b963bf5525
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 5
+  - 
   - Water
   - UI
-  - Bckgrnd
+  - 
   - 
   - 
   - 
@@ -49,25 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: bckgrnd
-    uniqueID: 3645748003
-    locked: 0
-  - name: mid1
-    uniqueID: 4230464691
-    locked: 0
-  - name: mid
-    uniqueID: 2066631071
-    locked: 0
-  - name: ground
-    uniqueID: 1382189225
-    locked: 0
-  - name: char
-    uniqueID: 3836883389
-    locked: 0
-  - name: UI
-    uniqueID: 969615547
-    locked: 0
-  - name: obstacles
-    uniqueID: 3640448727
     locked: 0
