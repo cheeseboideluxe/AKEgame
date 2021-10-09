@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class Monterey : MonoBehaviour
+public class monterey : MonoBehaviour
 {
     public float Hitpoints;
-    public float MaxHitpoints = 10;
+    public float MaxHitpoints = 1;
     public HealthbarBehaviour Healthbar;
 
 

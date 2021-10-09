@@ -2,92 +2,55 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class NormalRatControls : MonoBehaviour
 {
-    float dirX;
-    [SerializeField]
-    float moveSpeed = 3f;
+    float moveSpeed = 5f;
     Rigidbody2D rb;
-
-    bool facingRight;
-    Vector3 localScale;
-
+    private Transform player;
     public static bool isAttacking = false;
     Animator anim;
-    public float rayDist;
-    
-    public Transform groundDetect;
-
     // Start is called before the first frame update
     void Start()
     {
-        localScale = transform.localScale;
-        rb = GetComponent<Rigidbody2D>();
-        dirX = -1f;
 
-        anim = GetComponent<Animator>();
+        rb = this.GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
-        RaycastHit2D groundCheck = Physics2D.Raycast(groundDetect.position, Vector2.down, rayDist);
-        if (groundCheck.collider == false)
-        {
-            if (facingRight)
-            {
-                transform.eulerAngles = new Vector3(0, -180, 0);
-                facingRight = false;
-            }
-            else
-            {
-                transform.eulerAngles = new Vector3(0, 0, 0);
-                facingRight = true;
-            }
-        }
-        if (transform.position.x < -9f)
-            dirX = 1f;
-        else if (transform.position.x > 9f)
-            dirX = -1f;
 
+        transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+
+        if (transform.position.x < player.position.x)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        else
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
         if (isAttacking)
             anim.SetBool("isAttacking", true);
         else
             anim.SetBool("isAttacking", false);
-
     }
 
     void FixedUpdate()
     {
-        if (!isAttacking)
-            rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
-        else
-            rb.velocity = Vector2.zero;
     }
 
-    void LateUpdate()
-    {
-        CheckWhereToFace();
-    }
 
-    void CheckWhereToFace()
-    {
-        if (dirX > 0)
-            facingRight = false;
-        else if (dirX < 0)
-            facingRight = true;
-        if (((facingRight) && (localScale.x < 0)) || ((!facingRight) && (localScale.x > 0)))
-            localScale.x *= -1;
-        transform.localScale = localScale;
-    }
 
     void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag.Equals("Bullet"))
         {
             SoundManager.PlaySound("Death_NormalRat");
-            Destroy(col.gameObject, 2f);
+            Destroy(col.gameObject, 3f);
             Destroy(gameObject);
         }
     }
