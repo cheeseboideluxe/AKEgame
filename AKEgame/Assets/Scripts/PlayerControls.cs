@@ -125,7 +125,6 @@ public class PlayerControls : MonoBehaviour
         if (collision.gameObject.tag.Equals("Attack"))
         {
             FindObjectOfType<LifeCount>().LoseLife();
-            Destroy(gameObject, 0.5f);
         }
     }
 

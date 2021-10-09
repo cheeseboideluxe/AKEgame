@@ -253,6 +253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c040e63f343339843a8fd026a0e6f99b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  respawnPoint: {fileID: 72071007}
+  playerPrefab: {fileID: 1320690127}
 --- !u!4 &755584164
 Transform:
   m_ObjectHideFlags: 0
@@ -267,6 +269,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1320690127 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8215197854910861700, guid: d28b582ab020b734a959cb3aff67642e, type: 3}
+  m_PrefabInstance: {fileID: 8215197855142190548}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1350152004
 GameObject:
   m_ObjectHideFlags: 0
