@@ -17,7 +17,8 @@ public class PlayerControls : MonoBehaviour
     public float baseSpeed;
     public float dashPower;
     public float dashTime;
-    
+    bool isDead = false;
+
     bool isDashing = false;
     
     // Start is called before the first frame update
@@ -123,7 +124,7 @@ public class PlayerControls : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Attack"))
         {
-            anim.Play("_isDead");
+            FindObjectOfType<LifeCount>().LoseLife();
             Destroy(gameObject, 0.5f);
         }
     }
@@ -144,7 +145,13 @@ public class PlayerControls : MonoBehaviour
 
         moveSpeed = baseSpeed;
         isDashing = false;
-        
+    }
 
+    public void Die()
+    {
+        anim.Play("_isDead");
+        Destroy(gameObject, 0.5f);
+        isDead = true;
+        FindObjectOfType<LevelManager>().Restart();
     }
 }

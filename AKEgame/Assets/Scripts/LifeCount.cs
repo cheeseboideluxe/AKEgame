@@ -16,11 +16,11 @@ public class LifeCount : MonoBehaviour
         livesRemaining--;
         lives[livesRemaining].enabled = false;
 
-        if(livesRemaining==0)
+        if (livesRemaining == 0)
         {
-            Debug.Log("YOU LOST");
+            FindObjectOfType<PlayerControls>().Die();
         }
-    } 
+    }
     private void Update()
     {
         // if (Input.GetKeyDown(KeyCode.Return))

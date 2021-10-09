@@ -11,6 +11,7 @@ public class Attack : MonoBehaviour
 
             NormalRatControls.isAttacking = true;
             BouncerRat.isAttacking = true;
+            FindObjectOfType<LifeCount>().LoseLife();
         }
     }
 
