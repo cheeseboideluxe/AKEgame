@@ -3026,7 +3026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff61b6d49d5de94c9d8c1a74ec00f9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 3306091308178036154, guid: a43622659636c434bad46b0205b48558, type: 3}
+  enemy: {fileID: 901179427804375796, guid: 54e37ec2f394ca94e8ebaaa55ea350c2, type: 3}
   spawnRate: 2
 --- !u!4 &1449195477
 Transform:
