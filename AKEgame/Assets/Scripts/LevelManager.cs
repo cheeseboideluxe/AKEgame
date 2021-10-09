@@ -1,21 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class LevelManager : MonoBehaviour
-{
-    Vector2 playerInitPosition;
+public class LevelManager : MonoBehaviour{
+    public static LevelManager instance;
 
-    void Start()
-    {
-        playerInitPosition = FindObjectOfType<PlayerControls>().transform.position;
+    public Transform respawnPoint;
+    public GameObject playerPrefab;
+   
+    private void Awake() {
+        instance = this;        
     }
-
-    public void Restart()
+   public void Respawn()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        FindObjectOfType<LifeCount>();
+        Instantiate(playerPrefab, respawnPoint.position, Quaternion.identity);
     }
-
 }
