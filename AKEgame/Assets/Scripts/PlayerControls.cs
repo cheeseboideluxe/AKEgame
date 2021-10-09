@@ -115,8 +115,7 @@ public class PlayerControls : MonoBehaviour
     {
         if (col.gameObject.tag.Equals("Obstacles"))
         {
-            anim.Play("_isDead");
-            Destroy(gameObject, 0.5f);
+            Die();
         } 
         
     }
@@ -149,8 +148,7 @@ public class PlayerControls : MonoBehaviour
     public void Die()
     {
         anim.Play("_isDead");
-        Destroy(gameObject, 0.5f);
-        isDead = true;
+        SoundManager.PlaySound("Death_MM");
         FindObjectOfType<LevelManager>().Restart();
     }
 }

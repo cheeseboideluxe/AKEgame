@@ -216,9 +216,10 @@ GameObject:
   - component: {fileID: 83055308}
   - component: {fileID: 83055307}
   - component: {fileID: 83055306}
+  - component: {fileID: 83055309}
   m_Layer: 0
-  m_Name: flag
-  m_TagString: Obstacles
+  m_Name: Finish
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -236,7 +237,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.029129028, y: 0.17478275}
+  m_Offset: {x: 0.029129028, y: 0.87898684}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -247,7 +248,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.659977, y: 10.7182255}
+  m_Size: {x: 8.659977, y: 20.577042}
   m_EdgeRadius: 0
 --- !u!212 &83055307
 SpriteRenderer:
@@ -314,6 +315,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &83055309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83055305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a3b34cb8b5cd07419575793c382e298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &97023391 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6588447174437932773, guid: 6936d6dac728dd049b4527679ec7ec3a, type: 3}
@@ -835,7 +848,7 @@ GameObject:
   - component: {fileID: 784491012}
   m_Layer: 6
   m_Name: Trolley1
-  m_TagString: Enemy
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -886,7 +899,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.11702776, y: -0.40714353}
+  m_Offset: {x: -0.086057186, y: -0.6226454}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -897,7 +910,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.190345, y: 4.1546965}
+  m_Size: {x: 7.1195154, y: 4.462553}
   m_EdgeRadius: 0
 --- !u!212 &784491014
 SpriteRenderer:
@@ -964,7 +977,7 @@ GameObject:
   - component: {fileID: 840778481}
   m_Layer: 6
   m_Name: Trolley2
-  m_TagString: Enemy
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2300,6 +2313,10 @@ PrefabInstance:
     - target: {fileID: 6588447173998246596, guid: 6936d6dac728dd049b4527679ec7ec3a, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6588447173998246596, guid: 6936d6dac728dd049b4527679ec7ec3a, type: 3}
+      propertyPath: m_TagString
+      value: Attack
       objectReference: {fileID: 0}
     - target: {fileID: 6588447174437932761, guid: 6936d6dac728dd049b4527679ec7ec3a, type: 3}
       propertyPath: m_SortingLayer

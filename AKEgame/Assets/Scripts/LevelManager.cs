@@ -18,6 +18,12 @@ public class LevelManager : MonoBehaviour{
 
     public void Restart()
     {
+        StartCoroutine(DelayCoroutine());       
+    }
+
+    private IEnumerator DelayCoroutine()
+    {
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         FindObjectOfType<LifeCount>();
     }
@@ -25,6 +31,7 @@ public class LevelManager : MonoBehaviour{
     private void Awake() {
         instance = this;        
     }
+    
    public void Respawn()
     {
         Instantiate(playerPrefab, respawnPoint.position, Quaternion.identity);

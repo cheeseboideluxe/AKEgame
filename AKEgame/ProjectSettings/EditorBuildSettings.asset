@@ -18,15 +18,15 @@ EditorBuildSettings:
     path: Assets/Scenes/L2_Lobby.unity
     guid: f7c58aee0e4fe464ba91955779c99b1e
   - enabled: 0
-    path: Assets/Scenes/L3_Boss.unity
-    guid: 6416c1910b2c53b4e806cbeb45bf90d5
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/L3_boss 1.unity
+    guid: 8c2b7a0b52f87874588cdf5b8dd76eea
   - enabled: 1
     path: Assets/Scenes/Ratman.unity
     guid: e3e89d13737afaa4daf1e400cdd1fc19
   - enabled: 1
     path: Assets/Scenes/ratmanyes.unity
     guid: 5d287cc8d27abd64aa15a006b5f503e6
-  - enabled: 1
-    path: Assets/Scenes/L3_boss 1.unity
-    guid: 8c2b7a0b52f87874588cdf5b8dd76eea
   m_configObjects: {}

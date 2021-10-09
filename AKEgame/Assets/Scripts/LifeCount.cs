@@ -21,10 +21,5 @@ public class LifeCount : MonoBehaviour
             FindObjectOfType<PlayerControls>().Die();
         }
     }
-    private void Update()
-    {
-        // if (Input.GetKeyDown(KeyCode.Return))
-        //    LoseLife();
-    }
 
 }
