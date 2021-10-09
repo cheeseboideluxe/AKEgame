@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FastRat : MonoBehaviour
 {
-    float moveSpeed = 5f;
+    float moveSpeed = 6f;
     Rigidbody2D rb;
     private Transform player;
     public static bool isAttacking = false;
@@ -26,11 +26,11 @@ public class FastRat : MonoBehaviour
 
         if(transform.position.x < player.position.x)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3((float)-0.3045468, (float) 0.3045508, 1);
         }
         else
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3((float)0.3045468,(float) 0.3045508, 1);
         }
         if (isAttacking)
             anim.SetBool("isAttacking", true);
