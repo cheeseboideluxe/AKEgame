@@ -14,7 +14,8 @@ public class Finish : MonoBehaviour
 
     private IEnumerator DelayCoroutine()
     {
-        yield return new WaitForSeconds(1f);
+        SoundManager.PlaySound("Flag");
+        yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);  
     }
 }

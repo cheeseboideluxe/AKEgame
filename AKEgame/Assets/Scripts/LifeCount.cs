@@ -7,6 +7,12 @@ public class LifeCount : MonoBehaviour
 {
     public Image[] lives;
     public int livesRemaining;
+    private int maxLife;
+    
+    private void Start()
+    {
+        maxLife = livesRemaining;
+    }
 
     public void LoseLife()
     {
@@ -20,6 +26,30 @@ public class LifeCount : MonoBehaviour
         {
             FindObjectOfType<PlayerControls>().Die();
         }
+    }
+    
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return))
+            LoseLife();
+    }
+
+    public void KibbletLife()
+    {
+        if(livesRemaining < maxLife)
+        {
+            lives[livesRemaining].enabled = true;
+            livesRemaining += 1;
+        } 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Kibblet") && livesRemaining < maxLife == false)
+        {
+            KibbletLife();
+            Destroy(collision.gameObject);
+        } 
     }
 
 }
