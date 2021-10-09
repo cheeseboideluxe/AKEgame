@@ -8,7 +8,7 @@ public class Attack : MonoBehaviour
     {
         if (col.gameObject.name.Equals("Player"))
         {
-            NormalRatControls.isAttacking = true;
+            
             
             BouncerRat.isAttacking = true;
         }
@@ -18,7 +18,7 @@ public class Attack : MonoBehaviour
     {
         if (col.gameObject.name.Equals("Player"))
         {
-            NormalRatControls.isAttacking = false;
+         
            
             BouncerRat.isAttacking = false;
         }
