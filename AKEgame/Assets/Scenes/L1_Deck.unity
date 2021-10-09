@@ -716,9 +716,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 310383818}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Obstacles
-  m_TagString: Untagged
+  m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -752,7 +752,7 @@ GameObject:
   - component: {fileID: 353252155}
   - component: {fileID: 353252154}
   - component: {fileID: 353252156}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Passengers
   m_TagString: Obstacles
   m_Icon: {fileID: 0}
@@ -767,7 +767,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353252152}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.94, y: -4.32, z: 11.62244}
+  m_LocalPosition: {x: -28.7, y: -3.8, z: 11.62244}
   m_LocalScale: {x: 0.5989989, y: 0.5328393, z: 1}
   m_Children: []
   m_Father: {fileID: 310383818}
@@ -1674,7 +1674,7 @@ GameObject:
   - component: {fileID: 646158788}
   - component: {fileID: 646158787}
   - component: {fileID: 646158786}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Passengers (1)
   m_TagString: Obstacles
   m_Icon: {fileID: 0}
@@ -1689,8 +1689,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 646158784}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.83, y: -4.24, z: 11.62244}
-  m_LocalScale: {x: 0.5989989, y: 0.5328393, z: 1}
+  m_LocalPosition: {x: 1.4, y: -4, z: 11.62244}
+  m_LocalScale: {x: 0.67414725, y: 0.5328393, z: 1}
   m_Children: []
   m_Father: {fileID: 310383818}
   m_RootOrder: 1
@@ -3477,7 +3477,7 @@ GameObject:
   - component: {fileID: 1496894355}
   - component: {fileID: 1496894354}
   - component: {fileID: 1496894353}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Passengers (2)
   m_TagString: Obstacles
   m_Icon: {fileID: 0}
@@ -3492,7 +3492,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496894351}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36.47, y: -3.81, z: 11.62244}
+  m_LocalPosition: {x: 33.9, y: -3.6, z: 11.62244}
   m_LocalScale: {x: 0.5989989, y: 0.5328393, z: 1}
   m_Children: []
   m_Father: {fileID: 310383818}

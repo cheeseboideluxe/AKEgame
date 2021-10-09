@@ -539,13 +539,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 302327910}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Trolleys
   m_TagString: Obstacles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &302327910
 Transform:
   m_ObjectHideFlags: 0
@@ -833,9 +833,9 @@ GameObject:
   - component: {fileID: 784491014}
   - component: {fileID: 784491013}
   - component: {fileID: 784491012}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Trolley1
-  m_TagString: Trolley
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -883,7 +883,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.11702776, y: -0.40714353}
@@ -936,8 +936,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -654518569
-  m_SortingLayer: 0
+  m_SortingLayerID: -1143919631
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8a942b110f4c7324098c166dd0726180, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -962,9 +962,9 @@ GameObject:
   - component: {fileID: 840778480}
   - component: {fileID: 840778479}
   - component: {fileID: 840778481}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Trolley2
-  m_TagString: Trolley
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -993,7 +993,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.11702776, y: -0.40714353}
@@ -1046,8 +1046,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -654518569
-  m_SortingLayer: 0
+  m_SortingLayerID: -1143919631
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8a942b110f4c7324098c166dd0726180, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2211,7 +2211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1983724156}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
