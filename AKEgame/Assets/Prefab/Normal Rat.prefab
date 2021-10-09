@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 7838644738740760543}
   - component: {fileID: 7838644738740760536}
   - component: {fileID: 7838644738740760541}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Normal Rat
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -176,7 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7838644738822304099}
   - component: {fileID: 7838644738822304098}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Boop
   m_TagString: Attack
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 7838644738991231270}
   - component: {fileID: 7838644738991231268}
   - component: {fileID: 7838644738991231269}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AttackCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

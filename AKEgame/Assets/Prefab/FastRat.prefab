@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5191391167284817961}
   - component: {fileID: 2580266238010728021}
   - component: {fileID: 7690365666208109141}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AttackCheck
   m_TagString: Attack
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   m_Component:
   - component: {fileID: 853823125216527728}
   - component: {fileID: 7346660284962717818}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Boop
   m_TagString: Attack
   m_Icon: {fileID: 0}
@@ -121,9 +121,9 @@ GameObject:
   - component: {fileID: 3863358849224761671}
   - component: {fileID: 7652325850851596424}
   - component: {fileID: 1372717240605829489}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FastRat
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

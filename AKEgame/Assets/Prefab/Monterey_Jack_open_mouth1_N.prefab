@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 5052216175158389480}
   - component: {fileID: 5052216175158389463}
   - component: {fileID: 983584866538939653}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Monterey_Jack_open_mouth1_N
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,4 +95,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d95daaa202094d4bbe2275bc4252632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
+  Hitpoints: 0
+  MaxHitpoints: 1
+  Healthbar: {fileID: 0}
