@@ -38,7 +38,6 @@ public class NormalRatControls : MonoBehaviour
             anim.SetBool("isAttacking", true);
         else
             anim.SetBool("isAttacking", false);
-
     }
 
     void FixedUpdate()
