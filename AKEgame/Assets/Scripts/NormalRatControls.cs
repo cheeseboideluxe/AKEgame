@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class NormalRatControls : MonoBehaviour
 {
@@ -9,14 +10,11 @@ public class NormalRatControls : MonoBehaviour
     float moveSpeed = 3f;
     Rigidbody2D rb;
 
-    bool facingRight;
+    bool facingRight =false;
     Vector3 localScale;
 
     public static bool isAttacking = false;
     Animator anim;
-    public float rayDist;
-    
-    public Transform groundDetect;
 
     // Start is called before the first frame update
     void Start()
@@ -31,21 +29,7 @@ public class NormalRatControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
-        RaycastHit2D groundCheck = Physics2D.Raycast(groundDetect.position, Vector2.down, rayDist);
-        if (groundCheck.collider == false)
-        {
-            if (facingRight)
-            {
-                transform.eulerAngles = new Vector3(0, -180, 0);
-                facingRight = false;
-            }
-            else
-            {
-                transform.eulerAngles = new Vector3(0, 0, 0);
-                facingRight = true;
-            }
-        }
+       
         if (transform.position.x < -9f)
             dirX = 1f;
         else if (transform.position.x > 9f)
