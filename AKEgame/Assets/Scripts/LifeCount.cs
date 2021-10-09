@@ -30,24 +30,25 @@ public class LifeCount : MonoBehaviour
     
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
-            LoseLife();
+        // if (Input.GetKeyDown(KeyCode.Return))
+        //   LoseLife();
     }
 
     public void KibbletLife()
     {
-        if(livesRemaining < maxLife)
+        if(livesRemaining < maxLife && livesRemaining != 0)
         {
             lives[livesRemaining].enabled = true;
-            livesRemaining += 1;
+            livesRemaining += 2;
+            Debug.Log("RAT");
         } 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Kibblet") && livesRemaining < maxLife == false)
+        if (collision.gameObject.tag.Equals("Kibblet") && livesRemaining < maxLife && livesRemaining != 0)
         {
-            KibbletLife();
+            FindObjectOfType<LifeCount>().KibbletLife();
             Destroy(collision.gameObject);
         } 
     }
