@@ -10,6 +10,7 @@ public class NormalRatControls : MonoBehaviour
     private Transform player;
     public static bool isAttacking = false;
     Animator anim;
+    Vector3 localScale;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,11 +28,11 @@ public class NormalRatControls : MonoBehaviour
 
         if (transform.position.x < player.position.x)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3((float)-0.3733, (float)0.3615, 1);
         }
         else
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3((float)0.3733, (float)0.3615, 1);
         }
         if (isAttacking)
             anim.SetBool("isAttacking", true);
