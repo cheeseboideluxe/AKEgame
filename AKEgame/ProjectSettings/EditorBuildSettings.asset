@@ -20,9 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/L2_Lobby.unity
     guid: f7c58aee0e4fe464ba91955779c99b1e
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/preboss.unity
     guid: 0afe558d67afedb4ea2bf3147b156ed4
