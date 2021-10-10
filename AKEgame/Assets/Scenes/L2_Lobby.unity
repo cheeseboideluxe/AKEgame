@@ -1616,6 +1616,7 @@ MonoBehaviour:
   baseSpeed: 6
   dashPower: 10
   dashTime: 0.1
+  heart: {fileID: 1709258465}
 --- !u!114 &1287891340
 MonoBehaviour:
   m_ObjectHideFlags: 0

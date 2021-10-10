@@ -18,6 +18,7 @@ public class PlayerControls : MonoBehaviour
     public float dashPower;
     public float dashTime;
     bool isDead = false;
+    public GameObject heart;
 
     bool isDashing = false;
     
@@ -149,6 +150,7 @@ public class PlayerControls : MonoBehaviour
     {
         anim.Play("_isDead");
         SoundManager.PlaySound("Death_MM");
+        Destroy(heart.gameObject);
         FindObjectOfType<LevelManager>().Restart();
     }
 }
