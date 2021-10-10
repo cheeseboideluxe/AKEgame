@@ -8,18 +8,10 @@ public class LifeCount: MonoBehaviour
     public Image[] lives;
     public int livesRemaining;
     private int maxLife;
-
-    public static LifeCount Instance;
-
+    
     private void Start()
     {
         maxLife = livesRemaining;
-    }
-    
-    private void Update()
-    {
-        // if (Input.GetKeyDown(KeyCode.Return))
-          // LoseLife();
     }
 
     public void LoseLife()
@@ -36,6 +28,12 @@ public class LifeCount: MonoBehaviour
         }
     }
     
+    private void Update()
+    {
+        // if (Input.GetKeyDown(KeyCode.Return))
+        //   LoseLife();
+    }
+
     public void KibbletLife()
     {
         if(livesRemaining == 3)

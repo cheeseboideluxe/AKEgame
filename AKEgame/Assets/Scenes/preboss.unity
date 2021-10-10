@@ -3127,7 +3127,7 @@ MonoBehaviour:
   - {fileID: 1368457197}
   - {fileID: 184876361}
   livesRemaining: 3
-  Heart: {fileID: 1728962359}
+  maxLife: 0
 --- !u!61 &791287207
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3172,6 +3172,7 @@ MonoBehaviour:
   baseSpeed: 6
   dashPower: 10
   dashTime: 0.1
+  heart: {fileID: 0}
 --- !u!50 &791287209
 Rigidbody2D:
   serializedVersion: 4
@@ -6185,7 +6186,7 @@ MonoBehaviour:
   - {fileID: 1368457197}
   - {fileID: 184876361}
   livesRemaining: 3
-  Heart: {fileID: 0}
+  maxLife: 3
 --- !u!1 &1750429564
 GameObject:
   m_ObjectHideFlags: 0
