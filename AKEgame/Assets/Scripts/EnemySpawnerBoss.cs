@@ -7,7 +7,7 @@ public class EnemySpawnerBoss : MonoBehaviour
     public GameObject enemy;
     float randX;
     Vector2 whereToSpawn;
-    public float spawnRate = 2f;
+    public float spawnRate = 1f;
     float nextSpawn = 0.0f;
     // Start is called before the first frame update
     void Start()

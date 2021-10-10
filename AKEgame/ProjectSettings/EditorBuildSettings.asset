@@ -30,6 +30,12 @@ EditorBuildSettings:
     path: Assets/Scenes/L3_boss 1.unity
     guid: 8c2b7a0b52f87874588cdf5b8dd76eea
   - enabled: 1
+    path: Assets/Scenes/L4_boss 2.unity
+    guid: f7f317894e461f6468c676855212c020
+  - enabled: 1
+    path: Assets/Scenes/endcutscene.unity
+    guid: 40e91dbbcdcff824d88ff7bbada8d1bc
+  - enabled: 1
     path: Assets/Scenes/Ratman.unity
     guid: e3e89d13737afaa4daf1e400cdd1fc19
   - enabled: 1
