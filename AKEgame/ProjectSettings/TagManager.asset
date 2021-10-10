@@ -10,6 +10,7 @@ TagManager:
   - Trolley
   - Bullet
   - Kibblet
+  - Health
   layers:
   - Default
   - TransparentFX
