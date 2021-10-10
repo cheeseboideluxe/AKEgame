@@ -3368,6 +3368,7 @@ MonoBehaviour:
   baseSpeed: 6
   dashPower: 10
   dashTime: 0.1
+  heart: {fileID: 690709660}
 --- !u!50 &1181758712
 Rigidbody2D:
   serializedVersion: 4
